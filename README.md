@@ -1,6 +1,14 @@
 # Protein Blast
 This application calls the Protein BLAST service maintained by NCBI and downloads the result in XML format and saves the result in a file. After that, it parses the XML file, picks the relavant data and saves them in a comma separated version (CSV) file.
 
+# Presentation
+This is a presentation that I created for the Steel City Codes 2023 Spring Hackathon. Feel free to browse through it!
+https://docs.google.com/presentation/d/1FxfTYAFGQlu3JedNEtRCRRcY26AfsJK6vfzmEX47C9k/edit?usp=sharing
+
+# The Manual Process
+Below is a Google Doc that goes over the process of aligning genes manually, with an example and with links to the websites needed.
+https://docs.google.com/document/d/1JcxTSPKXi7xVXEOw7q7M12SbGt53n3T09gqcHHceKNg/edit?usp=sharing
+
 # Acronyms
 * NCBI: National Center for Biotechnology Information.
 * BLAST: Basic Local Alignment Search Tool.
