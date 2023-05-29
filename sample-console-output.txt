@@ -1,0 +1,130 @@
+$ java -version
+    openjdk version "11.0.11" 2021-04-20 LTS
+
+$ mvn -s settings.xml clean package
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+
+$ ls -l target/Protein-Blast-1.0.0-SNAPSHOT.jar
+    -rw-r--r--  1 kallb2  staff  5400619 May 28 20:25 target/Protein-Blast-1.0.0-SNAPSHOT.jar
+
+$ java -DblastFlag=true -DparseFlag=true -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.ProteinBlast
+    startDateTime: 2023-05-29-02-32-23
+    filename: gene-symbols.txt
+    Reading organisms.txt...
+    blastFlag: true
+    parseFlag: true
+    allBlastFiles: blast-files.txt
+    Starting files for gene LARP7
+    	Submitting request for DEER
+    Blast rID: 783NTS4C016
+    Waiting for results...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    Total wait was 130 seconds.
+    Downloading results of blast to file 'Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt'.
+    	Submitting request for DOG
+    Blast rID: 783TZ3EM016
+    Waiting for results...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    Total wait was 160 seconds.
+    Downloading results of blast to file 'Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt'.
+    	Submitting request for HORSE
+    Blast rID: 783Z6AGJ013
+    Waiting for results...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    	Sleeping for another 10 seconds...
+    Total wait was 50 seconds.
+    Downloading results of blast to file 'Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt'.
+    Processing blast results of: Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    Query Cover, E Value, % identity, Accession Length, Accession, isoform, fileName
+    100.00,             0, 87.14, 580, XP_043726814.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 86.96, 595, XP_043294294.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 86.96, 580, XP_043294297.1, isoform X3, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 86.62, 579, XP_043726817.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 86.45, 594, XP_043294296.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 86.28, 580, XP_020743599.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 85.76, 579, XP_020743598.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 85.93, 580, CAI9698017.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    100.00,             0, 85.93, 580, CAI9158358.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    97.77,             0, 84.91, 575, KAB0368257.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    97.77,             0, 84.39, 575, KAB0344907.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DEER--783NTS4C016--xml.txt
+    Processing blast results of: Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    Query Cover, E Value, % identity, Accession Length, Accession, isoform, fileName
+    100.00,             0, 88.32, 579, XP_038300349.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    100.00,             0, 88.14, 579, XP_038317915.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    100.00,             0, 88.14, 578, XP_038300352.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    100.00,             0, 87.97, 578, XP_038317918.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    26.80,   2.55371e-14, 33.13, 406, XP_022270386.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    26.80,   9.35322e-13, 28.80, 489, XP_025328088.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    16.67,   0.000639857, 28.87, 320, XP_006161625.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    14.43,   3.92895e-06, 35.71, 406, XP_022273113.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    14.43,   4.58517e-06, 35.71, 426, XP_005618867.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    9.79,   0.000923334, 36.84, 254, XP_025298124.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    9.45,    0.00232478, 38.18, 306, NP_001123909.2, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--DOG--783TZ3EM016--xml.txt
+    Processing blast results of: Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    Query Cover, E Value, % identity, Accession Length, Accession, isoform, fileName
+    100.00,             0, 88.85, 582, XP_001503501.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    100.00,             0, 88.68, 581, XP_005607942.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    28.69,   1.56138e-12, 28.50, 492, XP_023510306.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    25.60,   1.06168e-14, 33.96, 405, NP_001296114.1, , Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    17.70,   3.54709e-06, 33.98, 428, XP_001915106.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    17.70,   3.95502e-06, 33.98, 440, XP_023502955.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    16.67,   0.000295423, 28.87, 320, NP_001253664.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    14.43,   2.36487e-05, 32.14, 289, XP_023478477.1, isoform X2, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    14.43,   8.18446e-05, 32.14, 256, XP_023478478.1, isoform X3, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    10.82,    2.2325e-05, 36.51, 290, XP_023478476.1, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    9.45,     0.0018392, 38.18, 306, NP_001123909.2, isoform X1, Data/2023-05-29-02-32-23/LARP7--1/output--LARP7--HORSE--783Z6AGJ013--xml.txt
+    --------------------
+    Writing CSV file: Data/2023-05-29-02-32-23/final-results.csv
+    Gene Code, Organism, Query Cover, E Value, % identity, Accession Length, Accession, Isoform
+    LARP7, DEER, 100.00, 0, 87.14, 580, XP_043726814.1, isoform X1
+    LARP7, DOG, 100.00, 0, 88.32, 579, XP_038300349.1, isoform X1
+    LARP7, HORSE, 100.00, 0, 88.85, 582, XP_001503501.1, isoform X1
+
+$ tree data
+    data
+    └── 2023-05-29-02-32-23
+        ├── LARP7--1
+        │   ├── output--LARP7--DEER--783NTS4C016--xml.txt
+        │   ├── output--LARP7--DOG--783TZ3EM016--xml.txt
+        │   └── output--LARP7--HORSE--783Z6AGJ013--xml.txt
+        ├── blast-files.txt
+        └── final-results.csv
+
+$ cat Data/2023-05-29-02-32-23/final-results.csv
+    Gene Code, Organism, Query Cover, E Value, % identity, Accession Length, Accession, Isoform
+    LARP7, DEER, 100.00, 0, 87.14, 580, XP_043726814.1, isoform X1
+    LARP7, DOG, 100.00, 0, 88.32, 579, XP_038300349.1, isoform X1
+    LARP7, HORSE, 100.00, 0, 88.85, 582, XP_001503501.1, isoform X1
+
