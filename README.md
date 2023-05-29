@@ -38,12 +38,9 @@ data/2023-05-28-02-22-20/output--LARP7--ORG3--75EV6W45013--xml.txt
 Create gene-symbols.txt with list of genes to be processed. Lines that start with a # sign is treated as a comment and are ignored.
 ```
 Field order: GeneCode, UniProtKB, Sequence
-If Sequence is missing, the program will look up Sequence and write it to data/2023-05-28-02-42-02/gene-symbols.txt 
-which can be used to spot check if the program is working properly
-Also, it can be added to the main gene-symbols.txt file so that we don't need to look it up the next time.
 Example lines
 LBH, Q53QV2, MSIYFPIHCPDYLRSAKMTEVMMNTQPMEEIGLSPRKDGLSYQIFPDPSDFDRCCKLKDRLPSIVVEPTEGEVESGELRWPPEEFLVQEDEQDNCEETAKENKEQ
-LBR, Q14739
+LBR, Q14739, MSIYFPIHCPDYLRSAKMTEVMMNTQPMEEIGLSPRKDGLSYQIFPDPSDFDRCCKLKDRLPSIVVEPTEGEVESGELRWPPEEFLVQEDEQDNCEETAKENKEQ
 ```
 The initial creation of this file can be somewhat automated with these steps.
 ```
