@@ -25,7 +25,7 @@ sudo apt install maven
 $ mvn -s settings.xml clean package
 ```
 
-# Create local files
+# Edit blast-files config file
 Create blast-files.txt with list of files to be parsed. Any line that starts with a # sign is treated as a comment and are ignored.
 This tep can be skipped if blast part is not run yet.
 ```
@@ -34,7 +34,7 @@ data/2023-05-28-02-22-20/output--LARP7--ORG2--75EU6TKY012--xml.txt
 data/2023-05-28-02-22-20/output--LARP7--ORG3--75EV6W45013--xml.txt
 ```
 
-# Create local file
+# Edit gene symbols config file
 Create gene-symbols.txt with list of genes to be processed. Any line that starts with a # sign is treated as a comment and are ignored.
 ```
 Field order: GeneCode, UniProtKB, Sequence
@@ -73,29 +73,29 @@ Go to results tab
     we can use this as input: gene-symbols.txt
 ```
 
-# Create local file
+# Edit organisms config file
 Create organisms.txt with list of organisms. Any line that starts with a # sign is treated as a comment and are ignored.
 Supply three organisms in the format expected by NCBI.
 ```
-Rabbit Rotavirus[ORGN]
-Three-toed Sloth[ORGN]
-Domestic Horse[ORGN]
+DEER, deer[ORGN]
+HORSE, Domestic Horse[ORGN]
+DOG, dog[ORGN]
 ```
 
 # Run the program
-The application can be run in 3 modes.
+The application can be run in 3 modes. The use of third one is preferred.
 
 ## 1. Run Blast service and download the results to a file.
 ```
-$ java -DblastFlag=true -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.NcbiBlastApp
+$ java -DblastFlag=true -DparseFlag=false -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.ProteinBlast
 ```
 ## 2. Parse the previously downloaded the results and generate CSV file.
 ```
-$ java -DparseFlag=true -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.NcbiBlastApp
+$ java -DblastFlag=false -DparseFlag=true -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.ProteinBlast
 ```
 ## 3. Do #1 and #2 both together
 ```
-$ java -DblastFlag=true -DparseFlag=true -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.NcbiBlastApp
+$ java -DblastFlag=true -DparseFlag=true -cp target/Protein-Blast-1.0.0-SNAPSHOT.jar com.jkallich.ProteinBlast
 ```
 
 # References
