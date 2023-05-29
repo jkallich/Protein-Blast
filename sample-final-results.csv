@@ -1,0 +1,4 @@
+Gene Code, Organism, Query Cover, E Value, % identity, Accession Length, Accession, Isoform
+LARP7, DEER, 100.00, 0, 87.14, 580, XP_043726814.1, isoform X1
+LARP7, DOG, 100.00, 0, 88.32, 579, XP_038300349.1, isoform X1
+LARP7, HORSE, 100.00, 0, 88.85, 582, XP_001503501.1, isoform X1
