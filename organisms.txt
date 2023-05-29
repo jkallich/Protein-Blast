@@ -1,0 +1,3 @@
+DEER, deer[ORGN]
+HORSE, Domestic Horse[ORGN]
+DOG, dog[ORGN]
