@@ -33,6 +33,12 @@ import java.util.regex.Pattern;
 
 import static org.biojava.nbio.ws.alignment.qblast.BlastAlignmentParameterEnum.ENTREZ_QUERY;
 
+/*
+Welcome to Protein BLAST!
+
+Please check out my GitHub Repository for this project here: github.com/jkallich/Protein-Blast
+*/
+
 public class ProteinBlast {
 
     // An ArrayList of all the genes provided
